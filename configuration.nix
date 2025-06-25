@@ -61,6 +61,20 @@
   # Configure console keymap
   console.keyMap = "us-acentos";
 
+  environment.gnome.excludePackages = (with pkgs; [
+    atomix # puzzle game
+    cheese # webcam tool
+    epiphany # web browser
+    geary # email reader
+    gnome-music
+    gnome-photos
+    gnome-tour
+    hitori # sudoku game
+    iagno # go game
+    tali # poker game
+    totem # video player
+  ]);
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dev = {
     isNormalUser = true;
