@@ -106,8 +106,6 @@
 
     shellAliases = {
       ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
-      update-flake = "sudo nixos-rebuild switch --flake .";
     };
     histSize = 10000;
   };
